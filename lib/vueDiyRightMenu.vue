@@ -4,10 +4,10 @@
 */
 /*
  * @LastEditors: afei
- * @LastEditTime: 2020-11-26 11:30:11
+ * @LastEditTime: 2020-11-26 11:37:00
 */
 <template>
-  <div class="vue-diy-right-menu" @contextmenu.prevent="showMenu($event)">
+  <div :class="['diy-right-menu',cname]" @contextmenu.prevent="showMenu($event)">
     <slot>
       <p class="default-msg-content">触发事件内容区域</p>
     </slot>

@@ -5,9 +5,20 @@
 ### 1. 参数
 * `cname`：自定义class-->String;非必传;
 
-### 2. 自定义class（demo）
-	.charts-extra {
-	  width: 90%;
-	  margin: 0 auto;
-	  height: 400px;
-	}
+### 2. 插槽
+* `默认插槽`：替换显示的内容
+* `menu插槽`：替换默认menu列表
+>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+      <ul slot="menu">
+        <li>11</li>
+        <li>22</li>
+      </ul>
+
+### 3. 返回默认事件
+* `clickDom`：鼠标右击的回调，返回选中的DOM
+* `defaultEdit`：默认菜单列表的编辑回调，返回之前选中的DOM
+* `defaultDelete`：默认菜单列表的删除回调，返回之前选中的DOM
