@@ -1,7 +1,7 @@
 {
   "name": "vue-diy-right-menu",
   "description": "vue版自定义右键菜单",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "author": "aFei <1106728884@qq.com>",
   "license": "MIT",
   "main": "dist/vue-diy-right-menu.min.js",
@@ -26,7 +26,8 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
+    "css-loader": "^0.28.11",
+    "echarts": "^4.2.0-rc.2",
     "file-loader": "^1.1.4",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "vue": "^2.5.11",
@@ -35,7 +36,6 @@
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1",
-    "echarts": "^4.2.0-rc.2"
+    "webpack-dev-server": "^2.9.1"
   }
 }

@@ -4,11 +4,11 @@
 */
 /*
  * @LastEditors: afei
- * @LastEditTime: 2020-11-26 14:04:54
+ * @LastEditTime: 2020-11-26 15:26:56
 */
 <template>
   <div
-    :class="['diy-right-menu', cname]"
+    :class="['vue-diy-right-menu', cname]"
     @contextmenu.prevent="showMenu($event)"
   >
     <slot>
