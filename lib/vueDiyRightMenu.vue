@@ -4,10 +4,13 @@
 */
 /*
  * @LastEditors: afei
- * @LastEditTime: 2020-11-26 11:37:00
+ * @LastEditTime: 2020-11-26 14:04:54
 */
 <template>
-  <div :class="['diy-right-menu',cname]" @contextmenu.prevent="showMenu($event)">
+  <div
+    :class="['diy-right-menu', cname]"
+    @contextmenu.prevent="showMenu($event)"
+  >
     <slot>
       <p class="default-msg-content">触发事件内容区域</p>
     </slot>
@@ -30,6 +33,11 @@ export default {
       // 额外class
       type: String,
       default: "",
+    },
+    hideOnClick: {
+      // 点击后是否隐藏
+      type: Boolean,
+      default: true,
     },
   },
   data() {
@@ -66,13 +74,33 @@ export default {
         this.$emit("clickDom", this.dom);
       }
     },
-    hideMenu() {},
+    hideMenu(event) {
+      if (
+        this.hideOnClick ||
+        this.closest(event.target, ".menu-content") === null
+      ) {
+        this.show = false;
+      }
+    },
     defaultEdit() {
       this.$emit("defaultEdit", this.dom);
     },
     defaultDelete() {
       this.$emit("defaultDelete", this.dom);
     },
+  },
+  watch: {
+    show(value) {
+      if (value) {
+        document.body.addEventListener("click", this.hideMenu);
+      } else {
+        document.body.removeEventListener("click", this.hideMenu);
+      }
+    },
+  },
+  beforeDestroy() {
+    let it = this;
+    document.body.removeEventListener("click", it.hideMenu);
   },
 };
 </script>

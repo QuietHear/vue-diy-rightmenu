@@ -4,7 +4,7 @@
 */
 /*
  * @LastEditors: afei
- * @LastEditTime: 2020-11-26 11:21:25
+ * @LastEditTime: 2020-11-26 13:51:15
 */
 .vue-diy-right-menu .default-msg-content {
   font-size: 20px;
@@ -17,14 +17,15 @@
 }
 .vue-diy-right-menu .menu-content .default-menu-list {
   background: #fff;
-  border: 1px solid red;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
 .vue-diy-right-menu .menu-content .default-menu-list li {
-  height: 25px;
-  line-height: 25px;
-  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 25px;
   cursor: pointer;
 }
 .vue-diy-right-menu .menu-content .default-menu-list li:hover {
-  background: blue;
+  background: grey;
+  color: #fff;
 }

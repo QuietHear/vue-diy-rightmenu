@@ -4,6 +4,7 @@
 
 ### 1. 参数
 * `cname`：自定义class-->String;非必传;
+* `hide-on-click`：点击menu列表后是否隐藏menu列表-->Boolean;非必传,默认true;
 
 ### 2. 插槽
 * `默认插槽`：替换显示的内容
