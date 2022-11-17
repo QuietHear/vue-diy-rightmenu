@@ -4,7 +4,7 @@
 */
 /*
  * @LastEditors: aFei
- * @LastEditTime: 2022-11-17 11:54:27
+ * @LastEditTime: 2022-11-17 12:13:40
 */
 var path = require('path');
 var webpack = require('webpack');
@@ -14,8 +14,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'vue-diy-right-menu.min.js',
-    library: 'vueDiyRightMenu',
+    filename: 'vue-diy-rightmenu.min.js',
+    library: 'vueDiyRightmenu',
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },

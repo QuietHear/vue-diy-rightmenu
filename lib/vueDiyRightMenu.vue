@@ -3,12 +3,12 @@
 * @Date: 2020-11-26 11:16:18
 */
 /*
- * @LastEditors: afei
- * @LastEditTime: 2020-11-26 15:26:56
+ * @LastEditors: aFei
+ * @LastEditTime: 2022-11-17 12:14:11
 */
 <template>
   <div
-    :class="['vue-diy-right-menu', cname]"
+    :class="['vue-diy-rightmenu', cname]"
     @contextmenu.prevent="showMenu($event)"
   >
     <slot>
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "vueDiyRightMenu",
+  name: "vueDiyRightmenu",
   props: {
     cname: {
       // 额外class
@@ -107,5 +107,5 @@ export default {
 
 <!--基础样式-->
 <style scoped>
-@import "style/vueDiyRightMenu.css";
+@import "style/vueDiyRightmenu.css";
 </style>
