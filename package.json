@@ -1,7 +1,7 @@
 {
   "name": "vue-diy-rightmenu",
   "description": "vue2版 自定义右键菜单",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "aFei <1106728884@qq.com>",
   "license": "MIT",
   "main": "dist/vue-diy-rightmenu.min.js",
